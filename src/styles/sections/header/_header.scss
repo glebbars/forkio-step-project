@@ -1,0 +1,158 @@
+.header{
+  background-color: #27262A;
+  width: 100%;
+  @media screen and (min-width: 993px) {
+    background-color: black;
+    width: 100%;
+  }
+  &__nav {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    &:hover div a{
+      color: white;
+    }
+    &:hover h1{
+      color: white;
+    }
+    &:hover .header__nav__title__icon-passive {
+      display: inline-block;
+    };
+    &:hover .header__nav__title__icon-active {
+      display: none;
+    };
+    @media screen and (min-width: 481px) and (max-width: 992px) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    &__title {
+      align-items: center;
+      display: flex;
+      text-decoration: none;
+      &__icon-passive {
+        display: none;
+      }
+    }
+    &__logo {
+      @media screen and (min-width: 320px) and (max-width: 480px) {
+        display: none;
+      }
+      font-size: 24px;
+      font-weight: bold;
+      color: #8D81AC;
+      text-transform: uppercase;
+      margin-left: 20px;
+      font-family: "Lato", sans-serif;
+    }
+    &__menu{
+      font-family: "Montserrat", sans-serif;
+      @media screen and (min-width: 320px) and (max-width: 480px) {
+        display: none;
+        &.active {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          top: 101px;
+          right: 10px;
+          width: calc(100% - 20px);
+          max-width: 300px;
+          z-index: 1;
+          box-sizing: border-box;
+        }
+      }
+      @media screen and (min-width: 993px) {
+        display: flex;
+        justify-content: space-between;
+        margin-left: calc(100% - 902px);
+      }
+      @media screen and (min-width: 481px) and (max-width: 992px){
+        order: 4;
+        display: flex;
+        justify-content: center;
+        margin-top: 24px;
+        width: 100%;
+        margin-right: 20px;
+        }
+      &__link{
+        text-decoration: none;
+        font-size: 16px;
+        color: #8D81AC;
+        margin-right: 48px;
+        font-weight: bold;
+        @media screen and (min-width: 481px) and (max-width: 541px) {
+          text-decoration: none;
+          font-size: 16px;
+          color: #8D81AC;
+          font-weight: bold;
+        }
+        @media screen and (min-width: 320px) and (max-width: 480px) {
+          &.active {
+            font-weight: normal;
+            padding: 29px 0 21px 39px;
+            position: relative;
+            font-size: 20px;
+            line-height: 26px;
+            font-family: "Montserrat", sans-serif;
+            color: #FFFFFF;
+            border-bottom: 3px solid #3B3B3B;;
+            background-color: #333333;
+            margin-right: 0;
+          }
+          &.active:active {
+            color: #8D81AC;
+          }
+          &.active:active:before {
+            content: "";
+            padding: 23px 2px 23px 2px;
+            position: absolute;
+            background-color: #8D81AC;
+          }
+          &.active:focus {
+            color: #8D81AC;
+          }
+          &.active:focus:before {
+            content: "";
+            padding: 23px 2px 23px 2px;
+            position: absolute;
+            background-color: #8D81AC;
+            top: 18px;
+            left: 2px;
+          }
+        &__last-block {
+          padding: 5px 0;
+          width: 100%;
+          background-color: #333333;
+          @media screen and (min-width: 481px) {
+            display: none;
+          }
+        }
+        }
+      }
+    }
+    &__buy {
+      width: 145px;
+      border-radius: 40px;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      background: #8D81AC;
+      text-align: center;
+      padding: 11px 0;
+      font-family: "Montserrat", sans-serif;
+      margin-right: 20px;
+      @media screen and (min-width: 320px) and (max-width: 480px) {
+        margin-right: 0;
+        width: 120px;
+      }
+    }
+
+  }
+}
+.last-child {
+  margin-right: 0;
+}

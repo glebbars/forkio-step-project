@@ -1,0 +1,112 @@
+.people-talk {
+  padding: 60px 0 0 0;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to right, #4b3b4e 0%, #4b3b4e 20%, #645766 20%, #645766 80%, #4b3b4e 80%, #4b3b4e 100%) 0 0 2;
+  background-color: #4b3b4e;
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    background-image: url("../img/people_talk_bg1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 12px;
+    object-fit: fill;
+  }
+  @media screen and (min-width: 481px) and (max-width: 992px) {
+    background-image: url("../img/people_talk_bg 1@2x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 25px;
+  }
+  @media screen and (min-width: 993px) {
+    background-image: url("../img/people_talk_bg 1@3x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 50px;
+  }
+  &__title{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 48px;
+    line-height: 50px;
+    margin-bottom: 80px;
+    text-decoration: none;
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
+    @media screen and (min-width: 481px) and (max-width: 992px) {
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
+
+  }
+  &__content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+      flex-direction: column;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+      max-width: 320px;
+      width: calc(100% - 20px);
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: 481px) and (max-width: 992px) {
+      max-width: 320px;
+      width: 45vw;
+      margin-bottom: 40px;
+    }
+    @media screen and (min-width: 993px) {
+      max-width: 320px;
+      width: 30vw;
+      margin-bottom: 80px;
+    }
+    &__text {
+      text-align: center;
+      font-family: "Lato", sans-serif;
+      font-style: italic;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+      color: white;
+    }
+  }
+  &__info {
+    text-align: center;
+    width: 80%;
+    font-size: 14px;
+    font-family: "Lato", sans-serif;
+    color: #A291A5;
+    position: relative;
+  }
+}
+.smashing {
+  margin-bottom: 17px;
+}
+.coldrops {
+  margin-bottom: 10px;
+}
+.budda {
+  margin-bottom: 36px;
+}
+.blog {
+  margin-bottom: 26px;
+}
+.tnw {
+  margin-bottom: 26px;
+}
+

@@ -1,0 +1,43 @@
+@import "normalize";
+.container {
+  @media screen and (min-width: 993px) {
+    margin: 0 auto;
+    max-width: 1200px;
+    min-width: 320px;
+    padding: 0 10px 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  @media screen and (min-width: 481px) and (max-width: 992px) {
+    margin: 0 auto;
+    max-width: 992px;
+    min-width: 320px;
+    padding: 0 10px 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    margin: 0 auto;
+    max-width: 480px;
+    min-width: 300px;
+    padding: 0 10px 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+@import "sections/header/header";
+@import "sections/header/header_button";
+@import "sections/picture";
+@import "sections/people_talks";
+
+@import "revolutionary-editor";
+@import "what-you-get";
+@import "pricing-section";
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: Lato;
+  src: url("../fonts/Lato/Lato-Regular.ttf");
+}

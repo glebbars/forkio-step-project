@@ -1,0 +1,51 @@
+.header__nav__button {
+  @media screen and (min-width: 481px) {
+    display: none;
+  }
+  width: 26px;
+  height: 26px;
+  background-color: #27262A;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+  outline: 0;
+
+  &__decoration-short-line {
+    width: 15px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    transform: translateX(-14%) translateY(calc(-50% - 9px));
+    &.active {
+      display: none;
+    }
+  }
+
+
+  &__decoration-middle-line {
+    width: 26px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    &.active {
+      transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    }
+  }
+
+  &__decoration-bottom-line {
+    width: 26px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    transform: translateX(-50%) translateY(calc(-50% + 9px));
+    &.active{
+      transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    }
+  }
+}
+
+
